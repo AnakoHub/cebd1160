@@ -1,0 +1,15 @@
+gnuplot> set term png
+Terminal type set to 'png'
+Options are 'nocrop font "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf,12" fontscale 1.0 size 640,480 '
+gnuplot> set title "Comments per views"
+gnuplot> set output "tedPlotNo4.png"
+gnuplot> set xlabel Number of comments"
+         undefined variable: Number
+
+gnuplot> set xlabel "Number of comments"
+gnuplot> set ylabel "Number of views"
+gnuplot> set xrange [0:25000000]
+gnuplot> set xrange [0:10000000]
+gnuplot> set yrange [0:1000]
+gnuplot> set datafile separator ","
+gnuplot> plot "ted_main.csv" using 2:1 with points
